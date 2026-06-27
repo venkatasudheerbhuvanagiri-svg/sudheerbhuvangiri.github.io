@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Venkata Sudheer Bhuvangiri — Lead UX Researcher</title>
+<meta name="description" content="Lead UX Researcher · NNG Certified. 10+ years turning complex user behaviour into clear product decisions across Philips, Accenture, IBM iX, and Smith+Nephew.">
+<link rel="canonical" href="https://sudheerbhuvangiri.vercel.app/">
+<meta name="theme-color" content="#0A6B6B">
+<!-- Favicon (inline, no extra file needed) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A6B6B'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='38' font-weight='700' fill='%23F6F3EE' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+<!-- Open Graph / social link previews -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sudheerbhuvangiri.vercel.app/">
+<meta property="og:title" content="Venkata Sudheer Bhuvangiri — Lead UX Researcher">
+<meta property="og:description" content="10+ years turning complex user behaviour into clear product decisions. NNG Certified · Philips · Accenture · IBM iX · Smith+Nephew.">
+<meta property="og:image" content="https://sudheerbhuvangiri.vercel.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Venkata Sudheer Bhuvangiri">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Venkata Sudheer Bhuvangiri — Lead UX Researcher">
+<meta name="twitter:description" content="10+ years turning complex user behaviour into clear product decisions. NNG Certified · Philips · Accenture · IBM iX · Smith+Nephew.">
+<meta name="twitter:image" content="https://sudheerbhuvangiri.vercel.app/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Mono&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#0C1A27;
+  --ink2:#3A4F62;
+  --ink3:#6B8294;
+  --bg:#F6F3EE;
+  --surface:#FFFFFF;
+  --teal:#0A6B6B;
+  --teal2:#0E9090;
+  --teal-soft:#E2F0F0;
+  --gold:#C08A28;
+  --gold-soft:#FAF0DC;
+  --line:#D8D2C8;
+  --red:#B84038;
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);overflow-x:hidden;cursor:none}
+
+/* Custom cursor */
+.cursor{position:fixed;width:10px;height:10px;background:var(--teal);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:transform .15s,background .2s}
+.cursor-ring{position:fixed;width:36px;height:36px;border:1.5px solid var(--teal);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:transform .35s cubic-bezier(.25,.46,.45,.94),opacity .2s}
+body:hover .cursor-ring{opacity:1}
+a:hover~.cursor,.cursor.hover{transform:translate(-50%,-50%) scale(2.5);background:var(--gold)}
+
+/* Nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.5rem 4rem;display:flex;justify-content:space-between;align-items:center;mix-blend-mode:normal;background:rgba(246,243,238,0.92);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
+nav.scrolled{border-color:var(--line)}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:600;letter-spacing:.02em;color:var(--ink);text-decoration:none}
+.nav-links{display:flex;gap:2.5rem;list-style:none}
+.nav-links a{text-decoration:none;color:var(--ink2);font-size:.82rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--teal)}
+
+/* Hero */
+.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;padding:8rem 4rem 5rem;gap:4rem;align-items:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;right:-8rem;top:-6rem;width:40rem;height:40rem;border-radius:50%;background:radial-gradient(circle,rgba(10,107,107,.08) 0%,transparent 70%);pointer-events:none}
+.hero-eyebrow{font-size:.75rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);margin-bottom:1.2rem;display:flex;align-items:center;gap:.75rem}
+.hero-eyebrow::before{content:'';display:block;width:2rem;height:1px;background:var(--teal)}
+.hero-name{font-family:'Cormorant Garamond',serif;font-size:clamp(3.2rem,5.5vw,5.5rem);font-weight:700;line-height:1.02;letter-spacing:-.02em;color:var(--ink)}
+.hero-name em{font-style:italic;color:var(--teal);display:block}
+.hero-tagline{margin-top:1.8rem;font-size:1.05rem;color:var(--ink2);line-height:1.75;max-width:32rem;font-weight:300}
+.hero-cta{margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.75rem 1.75rem;border-radius:2px;font-size:.82rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:all .22s}
+.btn-primary{background:var(--teal);color:#fff}
+.btn-primary:hover{background:var(--teal2)}
+.btn-outline{border:1.5px solid var(--ink);color:var(--ink)}
+.btn-outline:hover{border-color:var(--teal);color:var(--teal)}
+.hero-right{display:flex;flex-direction:column;gap:1rem;padding-left:3rem;border-left:1px solid var(--line)}
+.hero-stat{padding:1.2rem 0;border-bottom:1px solid var(--line)}
+.hero-stat:last-child{border-bottom:none}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:700;color:var(--teal);line-height:1;letter-spacing:-.02em}
+.stat-label{font-size:.82rem;color:var(--ink3);margin-top:.25rem;font-weight:400}
+.companies-line{margin-top:2rem;padding-top:2rem;border-top:1px solid var(--line)}
+.companies-label{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ink3);margin-bottom:.8rem}
+.companies{display:flex;gap:1.2rem;flex-wrap:wrap;align-items:center}
+.company-badge{font-size:.78rem;font-weight:500;color:var(--ink2);padding:.25rem .7rem;border:1px solid var(--line);border-radius:2px;background:var(--surface)}
+
+/* Section base */
+section{padding:6rem 4rem}
+.section-label{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);font-weight:500;margin-bottom:3rem;display:flex;align-items:center;gap:.8rem}
+.section-label::before{content:'';display:block;width:2.5rem;height:1px;background:var(--teal)}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3.2rem);font-weight:700;line-height:1.1;letter-spacing:-.02em;color:var(--ink)}
+
+/* About */
+.about{background:var(--surface)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;margin-top:3rem}
+.about-text{font-size:1.05rem;color:var(--ink2);line-height:1.85;font-weight:300}
+.about-text p+p{margin-top:1.2rem}
+.about-text strong{color:var(--ink);font-weight:500}
+.awards-list{display:flex;flex-direction:column;gap:.8rem;margin-top:2rem}
+.award-item{display:flex;align-items:flex-start;gap:1rem;padding:1rem;background:var(--gold-soft);border-left:2px solid var(--gold)}
+.award-icon{font-size:1.2rem;flex-shrink:0}
+.award-text{font-size:.9rem;color:var(--ink2);font-weight:400;line-height:1.5}
+.award-text strong{color:var(--ink);font-weight:500;display:block;margin-bottom:.2rem;font-size:.95rem}
+.skills-grid{display:grid;gap:1rem}
+.skill-group{padding:1.2rem 1.4rem;background:var(--bg);border-radius:2px}
+.skill-group-title{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);font-weight:500;margin-bottom:.6rem}
+.skill-tags{display:flex;flex-wrap:wrap;gap:.4rem}
+.skill-tag{font-size:.78rem;padding:.25rem .65rem;background:var(--surface);border:1px solid var(--line);border-radius:2px;color:var(--ink2)}
+
+/* Work / Case studies */
+.work{background:var(--bg)}
+.case-grid{display:flex;flex-direction:column;gap:1px;margin-top:3rem;background:var(--line)}
+.case-item{background:var(--surface);display:grid;grid-template-columns:3fr 2fr;gap:0;cursor:pointer;transition:background .2s;overflow:hidden}
+.case-item:hover{background:#FAFAF8}
+.case-left{padding:2.8rem 3rem;border-right:1px solid var(--line)}
+.case-meta{display:flex;gap:1rem;align-items:center;margin-bottom:1.2rem;flex-wrap:wrap}
+.case-num{font-family:'DM Mono',monospace;font-size:.75rem;color:var(--ink3)}
+.case-tag{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;font-weight:500;padding:.2rem .6rem;border-radius:1px}
+.tag-teal{background:var(--teal-soft);color:var(--teal)}
+.tag-gold{background:var(--gold-soft);color:var(--gold)}
+.tag-ink{background:#EEF2F5;color:var(--ink2)}
+.case-title{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:700;color:var(--ink);line-height:1.15;letter-spacing:-.01em;margin-bottom:.8rem}
+.case-company{font-size:.82rem;color:var(--teal);font-weight:500;letter-spacing:.06em;text-transform:uppercase;margin-bottom:1rem}
+.case-summary{font-size:.95rem;color:var(--ink2);line-height:1.75;font-weight:300;max-width:36rem}
+.case-methods{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.5rem}
+.method-pill{font-size:.75rem;padding:.2rem .65rem;border:1px solid var(--line);border-radius:20px;color:var(--ink3)}
+.case-right{padding:2.8rem 2.5rem;display:flex;flex-direction:column;justify-content:center;gap:1.2rem}
+.case-stat-row{padding:.9rem 0;border-bottom:1px solid var(--line)}
+.case-stat-row:last-child{border-bottom:none}
+.case-stat-num{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:700;color:var(--teal);line-height:1;letter-spacing:-.02em}
+.case-stat-desc{font-size:.8rem;color:var(--ink3);margin-top:.2rem}
+.case-quote{padding:1rem 1.2rem;background:var(--teal-soft);border-left:2px solid var(--teal);font-size:.88rem;color:var(--ink2);line-height:1.65;font-style:italic;margin-top:1rem}
+.case-quote cite{display:block;font-style:normal;font-size:.75rem;color:var(--teal);margin-top:.5rem;font-weight:500}
+
+/* Expand accordion */
+.case-expand{display:none;grid-column:1/-1;padding:0 3rem 2.5rem;background:var(--surface);border-top:1px solid var(--line)}
+.case-expand.open{display:block}
+.case-expand-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2rem;padding-top:2rem}
+.expand-block-title{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);font-weight:500;margin-bottom:.6rem}
+.expand-block p{font-size:.9rem;color:var(--ink2);line-height:1.7;font-weight:300}
+.expand-toggle{display:flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:500;color:var(--teal);letter-spacing:.08em;text-transform:uppercase;margin-top:1.5rem;background:none;border:none;cursor:pointer;padding:0}
+.expand-toggle svg{transition:transform .25s}
+.expand-toggle.open svg{transform:rotate(180deg)}
+
+/* Timeline */
+.timeline-section{background:var(--surface)}
+.timeline{position:relative;margin-top:3rem;padding-left:1.5rem}
+.timeline::before{content:'';position:absolute;left:0;top:.4rem;bottom:.4rem;width:1px;background:var(--line)}
+.timeline-item{position:relative;padding:0 0 3rem 2.5rem}
+.timeline-item::before{content:'';position:absolute;left:-4.5px;top:.4rem;width:10px;height:10px;border-radius:50%;background:var(--surface);border:2px solid var(--teal)}
+.timeline-period{font-family:'DM Mono',monospace;font-size:.75rem;color:var(--ink3);margin-bottom:.4rem}
+.timeline-role{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;color:var(--ink);line-height:1.15}
+.timeline-company{font-size:.88rem;color:var(--teal);font-weight:500;margin:.3rem 0 .8rem}
+.timeline-bullets{list-style:none;display:flex;flex-direction:column;gap:.4rem}
+.timeline-bullets li{font-size:.9rem;color:var(--ink2);line-height:1.65;padding-left:1rem;position:relative;font-weight:300}
+.timeline-bullets li::before{content:'—';position:absolute;left:0;color:var(--line)}
+
+/* Mentoring strip */
+.mentoring{background:var(--teal);padding:5rem 4rem}
+.mentoring-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.mentoring-text .section-label{color:rgba(255,255,255,.6)}
+.mentoring-text .section-label::before{background:rgba(255,255,255,.4)}
+.mentoring-text .section-title{color:#fff}
+.mentoring-text p{color:rgba(255,255,255,.8);font-size:1rem;line-height:1.8;font-weight:300;margin-top:1.5rem}
+.mentoring-stats{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.ment-stat{background:rgba(255,255,255,.1);padding:1.5rem;border:1px solid rgba(255,255,255,.15)}
+.ment-stat-num{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:700;color:#fff;line-height:1}
+.ment-stat-label{font-size:.82rem;color:rgba(255,255,255,.7);margin-top:.4rem}
+.rating-row{grid-column:1/-1;display:flex;gap:.5rem;align-items:center;padding:1rem 1.2rem;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15)}
+.stars{color:var(--gold);font-size:1.1rem;letter-spacing:.1rem}
+.rating-text{font-size:.85rem;color:rgba(255,255,255,.85)}
+
+/* Certifications */
+.certs{background:var(--bg);padding:5rem 4rem}
+.certs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:3rem}
+.cert-card{background:var(--surface);padding:1.4rem 1.6rem;border:1px solid var(--line);border-radius:2px}
+.cert-org{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);font-weight:500;margin-bottom:.4rem}
+.cert-name{font-size:.92rem;font-weight:400;color:var(--ink);line-height:1.4}
+
+/* Contact */
+.contact{background:var(--ink);padding:6rem 4rem}
+.contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:end}
+.contact .section-label{color:var(--teal2)}
+.contact .section-label::before{background:var(--teal2)}
+.contact .section-title{color:#fff;margin-top:.5rem}
+.contact-desc{color:rgba(255,255,255,.55);font-size:1rem;line-height:1.8;font-weight:300;margin-top:1.5rem}
+.contact-links{display:flex;flex-direction:column;gap:1rem;margin-top:2.5rem}
+.contact-link{display:flex;align-items:center;gap:1rem;color:rgba(255,255,255,.7);text-decoration:none;font-size:.95rem;transition:color .2s;padding:.6rem 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.contact-link:last-child{border-bottom:none}
+.contact-link:hover{color:#fff}
+.contact-link-icon{width:2rem;height:2rem;background:var(--teal);display:flex;align-items:center;justify-content:center;border-radius:2px;flex-shrink:0;font-size:.9rem}
+.footer-note{color:rgba(255,255,255,.25);font-size:.78rem;margin-top:4rem;font-family:'DM Mono',monospace}
+
+/* Reviews / ADPList */
+.reviews{background:var(--surface);padding:5rem 4rem}
+.reviews-widget-wrap{margin-top:2.5rem;display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap}
+.reviews-widget-wrap iframe{border-radius:16px;box-shadow:rgba(142,151,158,.15) 0 4px 19px 0}
+
+/* Scroll animations */
+.fade-up{opacity:0;transform:translateY(24px);transition:opacity .65s cubic-bezier(.25,.46,.45,.94),transform .65s cubic-bezier(.25,.46,.45,.94)}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+
+/* Scrollbar */
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--line)}
+
+@media(max-width:900px){
+  nav{padding:1.2rem 1.5rem}
+  .hero,.about-grid,.contact-inner,.mentoring-inner{grid-template-columns:1fr;gap:2.5rem}
+  .hero{padding:7rem 1.5rem 4rem}
+  .hero-right{padding-left:0;border-left:none;border-top:1px solid var(--line);padding-top:2rem}
+  section,.mentoring,.certs,.contact{padding:4rem 1.5rem}
+  .case-item{grid-template-columns:1fr}
+  .case-left{border-right:none;border-bottom:1px solid var(--line);padding:2rem 1.5rem}
+  .case-right{padding:1.5rem}
+  .case-expand-grid{grid-template-columns:1fr}
+  .certs-grid{grid-template-columns:1fr 1fr}
+  .mentoring-stats{grid-template-columns:1fr 1fr}
+  .nav-links{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav id="nav">
+  <a href="#" class="nav-logo">Sudheer B.</a>
+  <ul class="nav-links">
+    <li><a href="#work">Work</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#mentoring">Mentoring</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Lead UX Researcher · NNG Certified</div>
+    <h1 class="hero-name">
+      Venkata Sudheer<em>Bhuvangiri</em>
+    </h1>
+    <p class="hero-tagline">
+      I turn complex user behaviour into clear product decisions — through rigorous research, strategic synthesis, and evidence that teams actually act on. <strong>10+ years</strong> building research practices at Philips, Accenture, IBM, and beyond.
+    </p>
+    <div class="hero-cta">
+      <a href="#work" class="btn btn-primary">View Case Studies</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
+    </div>
+    <div class="companies-line">
+      <div class="companies-label">Previously</div>
+      <div class="companies">
+        <span class="company-badge">Philips</span>
+        <span class="company-badge">Accenture</span>
+        <span class="company-badge">IBM iX</span>
+        <span class="company-badge">Smith+Nephew</span>
+        <span class="company-badge">CBRE</span>
+        <span class="company-badge">Enphase Energy</span>
+        <span class="company-badge">Kotak Mahindra</span>
+        <span class="company-badge">Oberoi Realty</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right fade-up">
+    <div class="hero-stat">
+      <div class="stat-num">10+</div>
+      <div class="stat-label">Years in UX Research across healthcare, fintech, enterprise</div>
+    </div>
+    <div class="hero-stat">
+      <div class="stat-num">25+</div>
+      <div class="stat-label">Researchers trained &amp; mentored at Accenture and ADP</div>
+    </div>
+    <div class="hero-stat">
+      <div class="stat-num">15+</div>
+      <div class="stat-label">Research studies delivered annually</div>
+    </div>
+    <div class="hero-stat">
+      <div class="stat-num">3</div>
+      <div class="stat-label">Industry awards — IBM, Accenture (Inspiring Innovator, ACE, Eminence &amp; Excellence)</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ ABOUT ══════════════ -->
+<section class="about" id="about">
+  <div class="section-label">About</div>
+  <h2 class="section-title">Research that moves<br><em style="font-style:italic;color:var(--teal)">product forward</em></h2>
+  <div class="about-grid">
+    <div>
+      <div class="about-text fade-up">
+        <p>I'm a <strong>Strategic Lead UX Researcher & Research Operations specialist</strong> with 10+ years of experience driving research-led product decisions across healthcare, fintech, consumer electronics, and enterprise technology.</p>
+        <p>NNG-certified with a proven track record of <strong>building and scaling UX research practices</strong>, leading and mentoring teams of 25+ researchers, and translating complex user insights into measurable business outcomes.</p>
+        <p>I bring rigor, empathy, and speed to organisations — adept at mixed-methods research, NPS strategy, research roadmap planning, and stakeholder alignment across global organisations including <strong>Philips, Accenture, and Smith+Nephew</strong>.</p>
+        <p>My approach: start from user reality, end at product clarity. No decorative research.</p>
+      </div>
+      <div class="awards-list fade-up" style="transition-delay:.15s">
+        <div class="award-item">
+          <div class="award-icon">🏆</div>
+          <div class="award-text"><strong>Inspiring Innovator Award — Accenture FY22 Q1</strong>For research excellence and team impact across the Assets &amp; Automation group</div>
+        </div>
+        <div class="award-item">
+          <div class="award-icon">🥇</div>
+          <div class="award-text"><strong>IBM Eminence &amp; Excellence Award ($1,000 USD)</strong>Young Achiever Award (2019) · Manager's Choice Award · ISL Proud Moment recognition</div>
+        </div>
+        <div class="award-item">
+          <div class="award-icon">🎖</div>
+          <div class="award-text"><strong>ACE Award + Sparkling Star — Accenture (2021 &amp; 2022)</strong>For delivering 15+ research studies annually and building the research practice from scratch</div>
+        </div>
+      </div>
+    </div>
+    <div class="fade-up" style="transition-delay:.2s">
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-group-title">Research Methods</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Usability Testing</span><span class="skill-tag">User Interviews</span><span class="skill-tag">Survey Design</span><span class="skill-tag">Heuristic Evaluation</span><span class="skill-tag">Tree Testing</span><span class="skill-tag">Contextual Inquiry</span><span class="skill-tag">Diary Studies</span><span class="skill-tag">Ethnographic Research</span><span class="skill-tag">Competitive Benchmarking</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Research Operations</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Roadmap Planning</span><span class="skill-tag">ReOps Setup</span><span class="skill-tag">Playbook Creation</span><span class="skill-tag">NPS Tracking</span><span class="skill-tag">Research Democratization</span><span class="skill-tag">Stakeholder Alignment</span><span class="skill-tag">Sprint Research</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Deliverables</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Personas</span><span class="skill-tag">Journey Maps</span><span class="skill-tag">Empathy Maps</span><span class="skill-tag">Insight Reports</span><span class="skill-tag">Executive Presentations</span><span class="skill-tag">Wireframes</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Tools</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Figma</span><span class="skill-tag">Miro · Mural</span><span class="skill-tag">Alchemer</span><span class="skill-tag">Userlytics</span><span class="skill-tag">Dovetail AI</span><span class="skill-tag">Watson AI (NLP)</span><span class="skill-tag">InVision</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Industries</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Healthcare</span><span class="skill-tag">Enterprise IT</span><span class="skill-tag">Fintech</span><span class="skill-tag">Property &amp; Real Estate</span><span class="skill-tag">Consumer Electronics</span><span class="skill-tag">Clean Energy</span><span class="skill-tag">Restaurant &amp; Hospitality</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ WORK ══════════════ -->
+<section class="work" id="work">
+  <div class="section-label">Selected Work</div>
+  <h2 class="section-title">9 Case Studies</h2>
+
+  <div class="case-grid">
+
+    <!-- Case 1: Philips Guided Shave -->
+    <div class="case-item" onclick="toggleCase(this)">
+      <div class="case-left">
+        <div class="case-meta">
+          <span class="case-num">01</span>
+          <span class="case-tag tag-teal">Comparative Testing</span>
+          <span class="case-tag tag-teal">Consumer Research</span>
+        </div>
+        <div class="case-company">Philips (via Tech Mahindra) — GroomTribe App</div>
+        <h3 class="case-title">Guided Shave A/B Design Testing</h3>
+        <p class="case-summary">Tested two real-time feedback variants — Star Ratings vs Numeric Scores — with 19 consumer participants across the GroomTribe guided shaving experience. Findings directly adopted into the OneBlade product roadmap.</p>
+        <div class="case-methods">
+          <span class="method-pill">A/B Usability Testing</span><span class="method-pill">Think-Aloud Protocol</span><span class="method-pill">Quant + Qual</span><span class="method-pill">n=19 participants</span>
+        </div>
+        <button class="expand-toggle" aria-label="Expand case study">
+          Read more <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="case-right">
+        <div class="case-stat-row">
+          <div class="case-stat-num">68%</div>
+          <div class="case-stat-desc">Preferred numeric scores over stars</div>
+        </div>
+        <div class="case-stat-row">
+          <div class="case-stat-num">13/19</div>
+          <div class="case-stat-desc">Clear preference for numeric design</div>
+        </div>
+        <div class="case-stat-row">
+          <div class="case-stat-num">5</div>
+          <div class="case-stat-desc">Prioritised recommendations adopted into roadmap</div>
+        </div>
+        <div class="case-quote">"Numeric feels more trustworthy than stars. I can compare previous shaves."<cite>— Participant, GroomTribe Study</cite></div>
+      </div>
+      <div class="case-expand">
+        <div class="case-expand-grid">
+          <div>
+            <div class="expand-block-title">The Challenge</div>
+            <p>The Philips GroomTribe team needed to decide between two competing feedback systems for a new AI-guided shave feature. The choice had significant UX and emotional implications — one design felt gamified, the other more clinical. Research was needed to inform a high-stakes product decision.</p>
+          </div>
+          <div>
+            <div class="expand-block-title">Research Approach</div>
+            <p>Ran comparative moderated usability sessions with 19 consumer participants. Each user tried both variants with task scenarios. Collected preference data, think-aloud observations, and post-session ratings. Conducted thematic analysis to identify why preferences differed beyond surface-level choices.</p>
+          </div>
+          <div>
+            <div class="expand-block-title">Key Findings &amp; Impact</div>
+            <p>Numeric scores were preferred because they felt precise, comparable, and progress-oriented. Users described stars as "vague" and "game-like." Key issues: motion feedback terminology was confusing, the summary page was hidden, and there was no actionable guidance tied to scores. All 5 recommendations were adopted into the OneBlade product roadmap.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case 2: Philips Global Survey -->
+    <div class="case-item" onclick="toggleCase(this)">
+      <div class="case-left">
+        <div class="case-meta">
+          <span class="case-num">02</span>
+          <span class="case-tag tag-teal">Global Survey</span>
+          <span class="case-tag tag-ink">Cross-Cultural</span>
+        </div>
+        <div class="case-company">Philips (via Tech Mahindra) — App Localisation</div>
+        <h3 class="case-title">Shaving Context Survey — 3 Markets, 823 Respondents</h3>
+        <p class="case-summary">Large-scale quantitative research across USA, Germany, and China to understand shaving habits, preferences, and app behaviours. Informed GroomTribe localisation strategy and feature prioritisation across product and design teams.</p>
+        <div class="case-methods">
+          <span class="method-pill">Quantitative Survey</span><span class="method-pill">Alchemer Platform</span><span class="method-pill">Cross-Cultural Analysis</span><span class="method-pill">n=823</span>
+        </div>
+        <button class="expand-toggle" aria-label="Expand case study">
+          Read more <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="case-right">
+        <div class="case-stat-row">
+          <div class="case-stat-num">823</div>
+          <div class="case-stat-desc">Respondents across USA · Germany · China</div>
+        </div>
+        <div class="case-stat-row">
+          <div class="case-stat-num">3</div>
+          <div class="case-stat-desc">Markets — app localisation strategy informed</div>
+        </div>
+        <div class="case-stat-row">
+          <div class="case-stat-num">10+</div>
+          <div class="case-stat-desc">Survey dimensions covering habits, behaviours, app usage</div>
+        </div>
+      </div>
+      <div class="case-expand">
+        <div class="case-expand-grid">
+          <div>
+            <div class="expand-block-title">Research Brief</div>
+            <p>Philips needed a detailed understanding of shaving behaviours and attitudes across three key markets before localising the GroomTribe app. Research covered: state of mind when shaving, wet/dry preference, charging habits, brand loyalty triggers, AI feature trust, and app usage patterns.</p>
+          </div>
+          <div>
+            <div class="expand-block-title">Methodology</div>
+            <p>Designed and deployed a multi-section survey on Alchemer. Analysed data for cross-market patterns and divergences across 10+ behavioural and attitudinal dimensions. Delivered findings as executive reports to Product, Design, and Engineering stakeholders across geo-teams.</p>
+          </div>
+          <div>
+            <div class="expand-block-title">Impact</div>
+            <p>Findings directly shaped app localisation decisions across 3 markets. Identified key market-specific feature priorities and UX considerations that diverged significantly from assumptions. Research championed within the team as a model for future global survey programmes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case 3: MMD Accenture -->
+    <div class="case-item" onclick="toggleCase(this)">
+      <div class="case-left">
+        <div class="case-meta">
+          <span class="case-num">03</span>
+          <span class="case-tag tag-gold">Enterprise Research</span>
+          <span class="case-tag tag-ink">Global</span>
+        </div>
+        <div class="case-company">Accenture — Assets &amp; Automation Group</div>
+        <h3 class="case-title">Manage My Delivery (MMD) — Global Usability Study</h3>
+        <p class="case-summary">Accenture's delivery-performance platform had critically low adoption among senior global stakeholders. Conducted a rigorous multi-country usability study to surface why — and what to do about it. 61-slide research report delivered.</p>
+        <div class="case-methods">
+          <span class="method-pill">Moderated Usability Testing</span><span class="method-pill">Focus Group</span><span class="method-pill">Voice of User</span><span class="method-pill">Thematic Analysis</span><span class="method-pill">12 Countries</span>
+        </div>
+        <button class="expand-toggle" aria-label="Expand case study">
+          Read more <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="case-right">
+        <div class="case-stat-row">
+          <div class="case-stat-num">12</div>
+          <div class="case-stat-desc">Countries represented in remote sessions</div>
+        </div>
+        <div class="case-stat-row">
+          <div class="case-stat-num">9</div>
+          <div class="case-stat-desc">Critical insight themes surfaced</div>
+        </div>
+        <div class="case-stat-row">
+          <div class="case-stat-num">90%</div>
+          <div class="case-stat-desc">Of users found data overwhelming — Cognitive Overload #1 theme</div>
+        </div>
+        <div class="case-quote">"So much information I do not use — what am I going to do with all this data?"<cite>— Market Unit Lead, MMD Usability Study</cite></div>
+      </div>
+      <div class="case-expand">
+        <div class="case-expand-grid">
+          <div>
+            <div class="expand-block-title">The Problem</div>
+            <p>MMD served MU Leads, Client Group Leads, and Biz Ops teams globally — but adoption was alarming low. Users were abandoning it for myWizard AI Fusion and CHC. A commissioned usability study was needed to identify root causes and provide a clear redesign brief.</p>
+          </div>
+          <div>
+            <div class="expand-block-title">Methods &amp; Scope</div>
+            <p>Remote moderated task-based usability testing across 12 countries. 8+ individual sessions, 1 focus group discussion. Passive Voice-of-User feedback channels active during MVP. Full thematic analysis across sessions producing 9 clustered insight themes with supporting quotes, ratings, and design principles.</p>
+          </div>
+          <div>
+            <div class="expand-block-title">Key Themes &amp; Outcome</div>
+            <p>Top themes: Cognitive Overload (90% overwhelmed), missing Personalisation, broken IA, unreliable RAG status, Data Reliability doubts, Siloed experience, Non-communicative system. Research became the backbone of an MMD redesign sprint and was cited in executive programme reviews.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case 4: iAspire -->
+    <div class="case-item" onclick="toggleCase(this)">
+      <div class="case-left">
+        <div class="case-meta">
+          <span class="case-num">04</span>
+          <span class="case-tag tag-gold">Mixed Methods</span>
+          <span class="case-tag tag-gold">Workshop Facilitation</span>
+        </div>
+        <div class="case-company">Accenture ATCI — Design Studio</div>
+        <h3 class="case-title">iAspire Career Platform — UT + Design Thinking Workshop</h3>
+        <p class="case-summary">Reimagining career growth for 500,000+ Accenture employees. Led end-to-end research: moderated usability testing across 9 sessions plus a 2-day Design Thinking Workshop with 42 participants — surfacing 7 design principles and 20+ emerging product features.</p>
+        <div class="case-methods">
+          <span class="method-pill">Moderated UT</span><span class="method-pill">Design Thinking Workshop</span><span class="method-pill">Mentimeter</span><span class="method-pill">Persona Development</span><span class="method-pill">Thematic Analysis</span>
+        </div>
+        <button class="expand-toggle" aria-label="Expand case study">
+          Read more <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="case-right">
+        <div class="case-stat-row">
+          <div class="case-stat-num">78.6%</div>
+          <div class="case-stat-desc">Task effectiveness rate — baseline measured</div>
+        </div>
+        <div class="case-stat-row">
+          <div class="case-stat-num">42</div>
+          <div class="case-stat-desc">Participants in 2-day Design Thinking Workshop</div>
+        </div>
+        <div class="case-stat-row">
+          <div class="case-stat-num">20+</div>
+          <div class="case-stat-desc">Emerging product features identified</div>
+        </div>
+        <div class="case-quote">"For the fanciness of the platform I'd rate 12/10 — but for usability, only 6/10."<cite>— Intelligent Platform Services, Level 11</cite></div>
+      </div>
+      <div class="case-expand">
+        <div class="case-expand-grid">
+          <div>
+            <div class="expand-block-title">The Challenge</div>
+            <p>iAspire was visually impressive but had critically low learnability. Novice users abandoned tasks; key features were invisible; terminology confused people across career levels. A rigorous multi-method study was needed before the platform scaled to 500,000 employees.</p>
+          </div>
+          <div>
+            <div class="expand-block-title">Research Programme</div>
+            <p>Phase 1: 9 remote moderated usability sessions with 8 career-level archetypes. Phase 2: 2-day Design Thinking Workshop with 42 participants using Mentimeter for real-time synthesis. Segmented analysis across Executive (L5–7) and Non-Executive (L8–11), lateral hires, and freshers.</p>
+          </div>
+          <div>
+            <div class="expand-block-title">Findings &amp; Impact</div>
+            <p>3 critical themes: Learnability failure for novices, Missing Guided Narrative (users needed contextual hand-holding), Navigation & CTA confusion (premature action forcing). Workshop surfaced 20+ features and validated 7 design principles. Findings shaped the full platform redesign roadmap.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case 5: WS Audiology -->
+    <div class="case-item" onclick="toggleCase(this)">
+      <div class="case-left">
+        <div class="case-meta">
+          <span class="case-num">05</span>
+          <span class="case-tag tag-ink">Cross-Cultural</span>
+          <span class="case-tag tag-ink">Quantitative</span>
+        </div>
+        <div class="case-company">WS Audiology</div>
+        <h3 class="case-title">Removing Cultural Bias from Cross-Market Survey Analysis</h3>
+        <p class="case-summary">Applied Z-Score standardisation (Kantar 2024 method) to remove acquiescence bias from software satisfaction ratings across Netherlands, USA, and India. Demonstrated how raw survey data can lead product teams to entirely wrong conclusions.</p>
+        <div class="case-methods">
+          <span class="method-pill">Z-Score Standardisation</span><span class="method-pill">Likert Scale Analysis</span><span class="method-pill">Cross-Cultural Research</span><span class="method-pill">Quantitative</span>
+        </div>
+        <button class="expand-toggle" aria-label="Expand case study">
+          Read more <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="case-right">
+        <div class="case-stat-row">
+          <div class="case-stat-num">3</div>
+          <div class="case-stat-desc">Markets — Netherlands, USA, India</div>
+        </div>
+        <div class="case-stat-row">
+          <div class="case-stat-num">↕ Raw</div>
+          <div class="case-stat-desc">vs Normalised: India #1 raw → USA #1 adjusted</div>
+        </div>
+        <div class="case-stat-row">
+          <div class="case-stat-num">Z</div>
+          <div class="case-stat-desc">Z-Score method applied — removes acquiescence bias entirely</div>
+        </div>
+      </div>
+      <div class="case-expand">
+        <div class="case-expand-grid">
+          <div>
+            <div class="expand-block-title">The Problem</div>
+            <p>Comparing 1–7 Likert satisfaction ratings across Netherlands, USA, and India is misleading without accounting for cultural response tendencies. Indian respondents culturally rate higher on average (acquiescence bias); Dutch respondents tend toward conservative ratings. Raw data comparison produces false conclusions.</p>
+          </div>
+          <div>
+            <div class="expand-block-title">Methodology</div>
+            <p>Applied Z-Score Standardisation — the established method in cross-cultural survey research (Kantar, 2024). Calculated per-market mean and standard deviation, standardised each respondent score. Produced a normalised comparison table enabling genuine market-to-market analysis.</p>
+          </div>
+          <div>
+            <div class="expand-block-title">Key Finding</div>
+            <p>Raw data: India rated highest (mean 4.89). Post-normalisation: USA rated highest (Z=+0.018), India adjusted down (Z=+0.012). India's high raw scores reflected cultural response patterns — not genuine satisfaction. Without standardisation, product teams would have deprioritised the US market incorrectly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case 6: Smith+Nephew -->
+    <div class="case-item" onclick="toggleCase(this)">
+      <div class="case-left">
+        <div class="case-meta">
+          <span class="case-num">06</span>
+          <span class="case-tag tag-teal">Research Ops</span>
+          <span class="case-tag tag-ink">Practice Building</span>
+        </div>
+        <div class="case-company">Smith+Nephew — GBS Teams</div>
+        <h3 class="case-title">Establishing UX Research Practice — ReOps, NPS &amp; ServiceNow IA Redesign</h3>
+        <p class="case-summary">Built the UX Research practice at Smith+Nephew from zero — defining ReOps processes, templates, and governance. Simultaneously led tree testing to redesign ServiceNow portal navigation and developed NPS dashboard strategy to track mobile adoption.</p>
+        <div class="case-methods">
+          <span class="method-pill">ReOps Setup</span><span class="method-pill">Tree Testing</span><span class="method-pill">Thematic Analysis</span><span class="method-pill">NPS Strategy</span><span class="method-pill">IA Redesign</span>
+        </div>
+        <button class="expand-toggle" aria-label="Expand case study">
+          Read more <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="case-right">
+        <div class="case-stat-row">
+          <div class="case-stat-num">0→1</div>
+          <div class="case-stat-desc">Research practice built from scratch — frameworks adopted org-wide</div>
+        </div>
+        <div class="case-stat-row">
+          <div class="case-stat-num">3</div>
+          <div class="case-stat-desc">Key user journeys improved via IA redesign</div>
+        </div>
+        <div class="case-stat-row">
+          <div class="case-stat-num">Top 3</div>
+          <div class="case-stat-desc">Friction drivers identified — measurable portal satisfaction uplift</div>
+        </div>
+      </div>
+      <div class="case-expand">
+        <div class="case-expand-grid">
+          <div>
+            <div class="expand-block-title">Practice Building</div>
+            <p>Established the UX Research function across GBS teams — defined ReOps processes, templates, and governance frameworks that were adopted organization-wide. Created the research intake, prioritisation, and reporting infrastructure from zero.</p>
+          </div>
+          <div>
+            <div class="expand-block-title">ServiceNow IA Redesign</div>
+            <p>Led tree testing and thematic analysis sessions to redesign the navigation architecture on the ServiceNow portal. Findings surfaced key findability failures across 3 major user journeys, directly informing the restructured IA that reduced task completion friction.</p>
+          </div>
+          <div>
+            <div class="expand-block-title">NPS &amp; Mobile Adoption</div>
+            <p>Developed and monitored an NPS dashboard strategy for mobile portal adoption. Identified the top 3 friction drivers through thematic synthesis of qualitative feedback — contributing to measurable improvement in portal satisfaction scores reported to senior stakeholders.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case 7: Enphase Solar -->
+    <div class="case-item" onclick="toggleCase(this)">
+      <div class="case-left">
+        <div class="case-meta">
+          <span class="case-num">07</span>
+          <span class="case-tag tag-teal">Mixed Methods</span>
+          <span class="case-tag tag-teal">AI Feature Research</span>
+        </div>
+        <div class="case-company">Enphase Energy — Solar Monitoring App</div>
+        <h3 class="case-title">Reimagining the Enphase App — Homeowner &amp; Installer Research</h3>
+        <p class="case-summary">End-to-end UX research for Enphase's solar monitoring platform — covering two distinct user archetypes (homeowner and installer). Secondary research, dual personas, empathy maps, journey maps, user flows, and prototype wireframes across 8 screens.</p>
+        <div class="case-methods">
+          <span class="method-pill">Secondary Research</span><span class="method-pill">Persona Development</span><span class="method-pill">Empathy Mapping</span><span class="method-pill">Journey Mapping</span><span class="method-pill">User Flow</span><span class="method-pill">Wireframing</span>
+        </div>
+        <button class="expand-toggle" aria-label="Expand case study">
+          Read more <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="case-right">
+        <div class="case-stat-row">
+          <div class="case-stat-num">2</div>
+          <div class="case-stat-desc">Distinct user archetypes researched — Homeowner &amp; Installer</div>
+        </div>
+        <div class="case-stat-row">
+          <div class="case-stat-num">8</div>
+          <div class="case-stat-desc">Wireframe screens — Splash, Setup, Dashboard, Insights, Battery, Sustainability, Alerts, Monthly Summary</div>
+        </div>
+        <div class="case-stat-row">
+          <div class="case-stat-num">93%</div>
+          <div class="case-stat-desc">Homeowners cite bill reduction as #1 motivation — research grounded in market data</div>
+        </div>
+        <div class="case-quote">"The current app presents complex technical data without clear context. Anand struggles to connect kWh metrics to his day-to-day savings."<cite>— Problem Statement, Enphase Research</cite></div>
+      </div>
+      <div class="case-expand">
+        <div class="case-expand-grid">
+          <div>
+            <div class="expand-block-title">The Problem</div>
+            <p>Enphase's solar monitoring app surfaced raw technical metrics (kWh, voltage, inverter data) with no personalisation or contextual translation. Homeowners felt disconnected from their investment — unsure whether the system was performing well, when to dispatch battery power, or how much they were actually saving. Over time this eroded confidence and app engagement. Installers faced a parallel problem: ambiguous pairing feedback and absent real-time diagnostics pushed them into troubleshooting instead of installing.</p>
+          </div>
+          <div>
+            <div class="expand-block-title">Research Approach</div>
+            <p>Conducted secondary research across solar homeowner surveys (US and India) covering motivations, pain points, financial expectations, and demand trends. Developed two evidence-based personas (Anand — homeowner; Ravi — installer) with full needs, pain points, and empathy maps. Created separate journey maps for both user types across all key touchpoints from installation to ongoing engagement. Defined two problem statements and HMW questions. Designed a complete user flow and 8-screen wireframe set in Figma — including AI insights, battery management, sustainability goal tracking, and monthly summary screens.</p>
+          </div>
+          <div>
+            <div class="expand-block-title">Key Insights &amp; Deliverables</div>
+            <p>Core insight: homeowners need emotional connection and plain-language translation of technical data — not more metrics. Key opportunity areas: AI-driven comparative insights ("today vs last year"), gamified sustainability milestones, smart battery scheduling, and proactive service alerts. For installers: auto-scan pairing, guided commissioning flow with progress feedback, and one-tap remote diagnostics. Delivered full Figma prototype (8 screens) + Mural journey maps for both user types + complete research deck.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case 8: Kotak Mahindra Bank -->
+    <div class="case-item" onclick="toggleCase(this)">
+      <div class="case-left">
+        <div class="case-meta">
+          <span class="case-num">08</span>
+          <span class="case-tag tag-gold">Competitive Benchmarking</span>
+          <span class="case-tag tag-gold">Fintech</span>
+        </div>
+        <div class="case-company">IBM iX — Kotak Mahindra Bank</div>
+        <h3 class="case-title">Home Loan Digital Experience — Competitive Benchmarking</h3>
+        <p class="case-summary">Benchmarked Kotak Mahindra Bank's home loan digital offering against five major competitors (HDFC, Axis, SBI, ICICI, Bank of Baroda) across product features, digital capabilities, AI/chatbot maturity, and user segments — to identify strategic gaps and opportunities.</p>
+        <div class="case-methods">
+          <span class="method-pill">Competitive Benchmarking</span><span class="method-pill">Digital Feature Audit</span><span class="method-pill">AI Capability Analysis</span><span class="method-pill">User Segmentation</span>
+        </div>
+        <button class="expand-toggle" aria-label="Expand case study">
+          Read more <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="case-right">
+        <div class="case-stat-row">
+          <div class="case-stat-num">5</div>
+          <div class="case-stat-desc">Competitor banks benchmarked — HDFC, Axis, SBI, ICICI, Bank of Baroda</div>
+        </div>
+        <div class="case-stat-row">
+          <div class="case-stat-num">AI</div>
+          <div class="case-stat-desc">Chatbot &amp; voice assistant landscape mapped across all players</div>
+        </div>
+        <div class="case-stat-row">
+          <div class="case-stat-num">3</div>
+          <div class="case-stat-desc">Dimensions — Product, Digital Offerings, User Segments</div>
+        </div>
+      </div>
+      <div class="case-expand">
+        <div class="case-expand-grid">
+          <div>
+            <div class="expand-block-title">Research Brief</div>
+            <p>Kotak Mahindra Bank needed a clear-eyed view of where its home loan digital experience stood relative to the market. Research covered product-level comparison (interest rates, processing fees, borrower categories), digital feature parity (calculators, online applications, repayment automation), and AI/conversational capability maturity across all major private and public sector competitors.</p>
+          </div>
+          <div>
+            <div class="expand-block-title">Approach</div>
+            <p>Systematic benchmarking across three analytical dimensions. Mapped each bank's AI and chatbot strategy — from Kotak's Keya voice bot and HDFC's EVA to Axis's Aha!, SBI's SIA, and ICICI's iPAL. Assessed digital channel coverage (desktop and mobile app parity), unique feature advantages, and social media presence as proxy for brand reach. Segmented users across demographic, psychographic, and lifecycle dimensions to identify underserved audience opportunities.</p>
+          </div>
+          <div>
+            <div class="expand-block-title">Key Findings</div>
+            <p>Kotak's 'Everything Me' personalisation and Keya voice bot represented differentiated strengths no competitor had matched. Key gap: no standalone home loan microsite or virtual tour equivalent to SBI's offering. AI chatbot sophistication varied dramatically — HDFC's EVA led on NLP maturity. Research informed Kotak's digital roadmap priorities and shaped the experience strategy for the home loan acquisition journey.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case 9: Oberoi Realty -->
+    <div class="case-item" onclick="toggleCase(this)">
+      <div class="case-left">
+        <div class="case-meta">
+          <span class="case-num">09</span>
+          <span class="case-tag tag-ink">Heuristic Evaluation</span>
+          <span class="case-tag tag-ink">Real Estate</span>
+        </div>
+        <div class="case-company">IBM iX — Oberoi Realty</div>
+        <h3 class="case-title">Oberoi Realty Website — Personas, Heuristic Evaluation &amp; Journey Mapping</h3>
+        <p class="case-summary">Diagnosed why prospective buyers were not completing inquiry forms on Oberoi Realty's website. Combined persona development, competitor heuristic evaluation, and journey mapping to surface the UX failures blocking lead conversion — across 5 competitor sites.</p>
+        <div class="case-methods">
+          <span class="method-pill">Heuristic Evaluation</span><span class="method-pill">Persona Development</span><span class="method-pill">Journey Mapping</span><span class="method-pill">Competitor Analysis</span><span class="method-pill">Website Assessment</span>
+        </div>
+        <button class="expand-toggle" aria-label="Expand case study">
+          Read more <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="case-right">
+        <div class="case-stat-row">
+          <div class="case-stat-num">5</div>
+          <div class="case-stat-desc">Competitor sites evaluated — Lodha, Runwal, L&amp;T, Marathon, Kalpataru</div>
+        </div>
+        <div class="case-stat-row">
+          <div class="case-stat-num">2</div>
+          <div class="case-stat-desc">Distinct personas — Local IT professional &amp; NRI investor</div>
+        </div>
+        <div class="case-stat-row">
+          <div class="case-stat-num">4</div>
+          <div class="case-stat-desc">High-severity heuristic violations identified across competitor sites</div>
+        </div>
+        <div class="case-quote">"Too many options, too many form fields, too many unanswered calls — users abandon before they convert."<cite>— Journey Map Insight, Oberoi Research</cite></div>
+      </div>
+      <div class="case-expand">
+        <div class="case-expand-grid">
+          <div>
+            <div class="expand-block-title">Business Problem</div>
+            <p>Oberoi Realty, one of Mumbai's leading real estate developers with 42+ projects, was losing prospective buyers at the inquiry form stage. The core business question: why are users landing on the site but not converting? Research was commissioned to understand both the user reality and the competitive landscape before redesigning the acquisition experience.</p>
+          </div>
+          <div>
+            <div class="expand-block-title">Research Methods</div>
+            <p>Developed two evidence-grounded personas — Ravi (Mumbai-based IT professional, first-time buyer navigating mortgage complexity) and Amrita Gupta (NRI investor, site-visiting remotely and dependent on digital trust signals). Conducted heuristic evaluations across 5 competitor sites using a structured 10-criterion assessment scorecard (based on Forrester's framework). Created As-Is journey map documenting 2–3 hours of daily portal browsing, failed phone enquiries, and form abandonment patterns.</p>
+          </div>
+          <div>
+            <div class="expand-block-title">Key Findings</div>
+            <p>Four high-severity violations identified across competitors: inconsistent navigation patterns (hamburger menu absent on Lodha), broken search-to-project-page routing, absent error feedback on form submission, and missing home loan service information on homepages. Journey mapping revealed the decisive insight: users didn't abandon because of distrust — they abandoned because of cognitive overload from options, poor filtering, and no guided need-discovery flow. Recommendations centred on progressive disclosure, guided questioning, and reduced upfront form friction.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════ EXPERIENCE ══════════════ -->
+<section class="timeline-section" id="experience">
+  <div class="section-label">Experience</div>
+  <h2 class="section-title">Career Timeline</h2>
+  <div class="timeline" style="margin-top:3.5rem;max-width:52rem">
+
+    <div class="timeline-item fade-up">
+      <div class="timeline-period">Oct 2024 — Jun 2026</div>
+      <div class="timeline-role">Senior UX Researcher</div>
+      <div class="timeline-company">Philips (via Tech Mahindra)</div>
+      <ul class="timeline-bullets">
+        <li>Lead end-to-end UX research across global teams for Philips Grooming apps (GroomTribe, OneBlade), managing research roadmap across cross-geo teams</li>
+        <li>Conducted usability tests, heuristic evaluations, and global surveys (n=823 across USA, Germany, China); prototype comparison study directly adopted into OneBlade roadmap</li>
+        <li>Championed research democratization by upskilling design partners on lightweight research methods within agile sprint cycles</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item fade-up" style="transition-delay:.1s">
+      <div class="timeline-period">Aug 2023 — Sep 2024</div>
+      <div class="timeline-role">UX Researcher</div>
+      <div class="timeline-company">Smith+Nephew</div>
+      <ul class="timeline-bullets">
+        <li>Established UX Research practice across GBS teams — defined ReOps processes, templates, and governance frameworks adopted organization-wide</li>
+        <li>Led tree testing and thematic analysis to redesign ServiceNow portal navigation, reducing friction across 3 key user journeys</li>
+        <li>Developed NPS dashboard strategy; identified top 3 friction drivers contributing to measurable portal satisfaction improvement</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item fade-up" style="transition-delay:.15s">
+      <div class="timeline-period">May 2023 — Jul 2023</div>
+      <div class="timeline-role">Lead UX Researcher</div>
+      <div class="timeline-company">Mantra Labs, Bangalore</div>
+      <ul class="timeline-bullets">
+        <li>Led UX research function and managed a team of 6 researchers across B2C and medical industry clients</li>
+        <li>Applied mixed-methods research to uncover user pain points and validate design solutions</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item fade-up" style="transition-delay:.2s">
+      <div class="timeline-period">Sep 2022 — May 2023</div>
+      <div class="timeline-role">UX Researcher II</div>
+      <div class="timeline-company">CBRE</div>
+      <ul class="timeline-bullets">
+        <li>Owned UX research deliverables across the Property Management project — planning through insight delivery</li>
+        <li>Performed UX audit for the PULSE platform and led moderated usability testing for a new planning platform</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item fade-up" style="transition-delay:.25s">
+      <div class="timeline-period">Mar 2020 — Aug 2022</div>
+      <div class="timeline-role">Lead UX Researcher</div>
+      <div class="timeline-company">Accenture Solutions Pvt. Ltd.</div>
+      <ul class="timeline-bullets">
+        <li>Built and scaled the UX Research practice — grew team from 2 to 5 researchers and delivered 15+ studies annually</li>
+        <li>Executed mixed-methods programs (surveys, usability tests, user interviews, DT workshops) and distilled findings into executive-level reports</li>
+        <li>Created standardised research playbooks and templates adopted across the org; trained 10+ UX researchers</li>
+        <li>🏆 Inspiring Innovator Award (FY22 Q1) · ACE Award (2022) · Sparkling Star Award (2021)</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item fade-up" style="transition-delay:.3s">
+      <div class="timeline-period">Feb 2016 — Oct 2019</div>
+      <div class="timeline-role">Data Research Associate → UX Researcher</div>
+      <div class="timeline-company">IBM India Pvt. Ltd.</div>
+      <ul class="timeline-bullets">
+        <li>Led end-to-end UX research across 4 client engagements: IBM iX Private Equipment Finance (digital transformation), IBM iX Private Bank (AI-augmented sentiment analysis), ODS KOL Database, IBM ML Hub Banking Segmentation Dashboard</li>
+        <li>Applied IBM Watson Discovery for NLP-based sentiment analysis — one of the earliest AI-augmented research applications at IBM India (2018–19)</li>
+        <li>Won 3rd prize in IBM BringIT Open Challenge — independently researched, designed &amp; prototyped a banking segmentation dashboard</li>
+        <li>🏆 IBM Eminence &amp; Excellence Award ($1,000 USD) · Young Achiever Award (2019) · Manager's Choice Award</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════ MENTORING ══════════════ -->
+<section class="mentoring" id="mentoring">
+  <div class="mentoring-inner">
+    <div class="mentoring-text">
+      <div class="section-label">Mentoring &amp; Community</div>
+      <h2 class="section-title" style="color:#fff">Growing the next generation of researchers</h2>
+      <p>One of ADPList's <strong>Top 10 mentors globally</strong> with 9,700+ followers — actively mentoring UX professionals across India, USA, UAE and Afghanistan, including a UX Researcher at Microsoft. Consistently rated 5/5 across all attributes. Areas: usability testing strategy, portfolio building, job transition coaching, and research career development.</p>
+      <p style="margin-top:1rem">Previously: Designed and delivered Accenture's Greenfield Training Programme for fresh graduates — recognised by the Accenture UX Research Director as setting the standard for research mentorship.</p>
+    </div>
+    <div class="mentoring-stats">
+      <div class="ment-stat">
+        <div class="ment-stat-num">Top 10</div>
+        <div class="ment-stat-label">ADPList mentor globally · 9,700+ followers</div>
+      </div>
+      <div class="ment-stat">
+        <div class="ment-stat-num">25+</div>
+        <div class="ment-stat-label">Researchers trained &amp; mentored at Accenture + ADP</div>
+      </div>
+      <div class="rating-row">
+        <div class="stars">★★★★★</div>
+        <div class="rating-text">5/5 across all 4 attributes — Technically Competent · Very Motivational · Amazing Communicator · Amazing Problem Solver</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CERTIFICATIONS ══════════════ -->
+<section class="certs">
+  <div class="section-label">Certifications</div>
+  <h2 class="section-title">Credentials</h2>
+  <div class="certs-grid" style="margin-top:2.5rem">
+    <div class="cert-card fade-up">
+      <div class="cert-org">Nielsen Norman Group</div>
+      <div class="cert-name">Certified UX Practitioner</div>
+    </div>
+    <div class="cert-card fade-up" style="transition-delay:.05s">
+      <div class="cert-org">IBM</div>
+      <div class="cert-name">Enterprise Design Thinking — Co-Creator &amp; Practitioner</div>
+    </div>
+    <div class="cert-card fade-up" style="transition-delay:.1s">
+      <div class="cert-org">Interaction Design Foundation</div>
+      <div class="cert-name">UX Designer from Scratch</div>
+    </div>
+    <div class="cert-card fade-up" style="transition-delay:.15s">
+      <div class="cert-org">Interaction Design Foundation</div>
+      <div class="cert-name">User Research Methods &amp; Best Practices</div>
+    </div>
+    <div class="cert-card fade-up" style="transition-delay:.2s">
+      <div class="cert-org">Interaction Design Foundation</div>
+      <div class="cert-name">Conducting Usability Testing</div>
+    </div>
+    <div class="cert-card fade-up" style="transition-delay:.25s">
+      <div class="cert-org">Interaction Design Foundation</div>
+      <div class="cert-name">Data-Driven Design: Quantitative Research for UX</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ REVIEWS ══════════════ -->
+<section class="reviews" id="reviews">
+  <div class="section-label">Mentee Reviews</div>
+  <h2 class="section-title">What people are<br><em style="font-style:italic;color:var(--teal)">saying</em></h2>
+  <div class="reviews-widget-wrap fade-up">
+    <section style="flex:1 1 420px;max-width:650px;height:560px;box-shadow:rgba(142,151,158,.15) 0 4px 19px 0;border-radius:16px;overflow:hidden">
+      <iframe src="https://adplist.org/widgets/impact?src=sudheer-bhuvangiri" title="ADPList Impact" width="100%" height="100%" loading="lazy" style="border:0"></iframe>
+    </section>
+    <section style="flex:1 1 420px;max-width:650px;height:560px;box-shadow:rgba(142,151,158,.15) 0 4px 19px 0;border-radius:16px;overflow:hidden">
+      <iframe src="https://adplist.org/widgets/reviews?src=sudheer-bhuvangiri" title="All Reviews" width="100%" height="100%" loading="lazy" style="border:0"></iframe>
+    </section>
+  </div>
+</section>
+
+<!-- ══════════════ CONTACT ══════════════ -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div>
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">Let's build great<br><em style="font-style:italic">research together</em></h2>
+      <p class="contact-desc">I bring research rigour, strategic thinking, and the ability to turn complexity into clarity — helping product teams build with confidence. Open to senior UX research roles, research leadership, and consulting engagements.</p>
+    </div>
+    <div>
+      <div class="contact-links">
+        <a href="mailto:Venkatasudheer.bhuvanagiri@gmail.com" class="contact-link">
+          <div class="contact-link-icon">✉</div>
+          Venkatasudheer.bhuvanagiri@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/sudheerbhuvangiri/" target="_blank" class="contact-link">
+          <div class="contact-link-icon">in</div>
+          linkedin.com/in/sudheerbhuvangiri
+        </a>
+        <a href="tel:+919966184438" class="contact-link">
+          <div class="contact-link-icon">☎</div>
+          +91 9966184438
+        </a>
+      </div>
+      <p class="footer-note" style="margin-top:3rem">© <span id="yr">2026</span> Venkata Sudheer Bhuvangiri · Lead UX Researcher · NNG Certified · Hyderabad, India</p>
+    </div>
+  </div>
+</section>
+
+<script>
+// Cursor
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursorRing');
+document.addEventListener('mousemove', e => {
+  cursor.style.left = e.clientX+'px';
+  cursor.style.top = e.clientY+'px';
+  ring.style.left = e.clientX+'px';
+  ring.style.top = e.clientY+'px';
+});
+document.querySelectorAll('a,button,.case-item').forEach(el => {
+  el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+  el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+});
+
+// Nav scroll
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// Intersection observer for fade-up
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }});
+}, {threshold:0.12});
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// Case study expand/collapse
+function toggleCase(item) {
+  const expand = item.querySelector('.case-expand');
+  const btn = item.querySelector('.expand-toggle');
+  if(!expand) return;
+  const isOpen = expand.classList.contains('open');
+  // Close all first
+  document.querySelectorAll('.case-expand.open').forEach(e => {
+    e.classList.remove('open');
+    const b = e.closest('.case-item').querySelector('.expand-toggle');
+    if(b){ b.classList.remove('open'); b.querySelector('svg').style.transform=''; }
+  });
+  if(!isOpen){
+    expand.classList.add('open');
+    if(btn){ btn.classList.add('open'); btn.querySelector('svg').style.transform='rotate(180deg)'; }
+    setTimeout(() => item.scrollIntoView({behavior:'smooth',block:'nearest'}), 50);
+  }
+}
+
+// Prevent expand when clicking the button (it's inside the grid onclick)
+document.querySelectorAll('.expand-toggle').forEach(btn => {
+  btn.addEventListener('click', e => e.stopPropagation());
+  btn.addEventListener('click', function() {
+    toggleCase(this.closest('.case-item'));
+  });
+});
+
+// Auto-update footer year
+document.getElementById("yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
